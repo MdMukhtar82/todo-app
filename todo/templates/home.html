@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>My Todo App</h1>
+
+        <p class="subtitle">
+            Manage your daily tasks
+        </p>
+
+
+        <!-- Add Todo Form -->
+        <form id="todoForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task"
+            >
+
+            <button type="submit">
+                Add Task
+            </button>
+
+        </form>
+
+
+        <!-- Todo List -->
+        <div class="todo-list" id="todoList">
+
+
+            <!-- Todo 1 -->
+            <div class="todo-item">
+
+                <span>Learn Django</span>
+
+                <div>
+
+                    <button class="edit">
+                        Edit
+                    </button>
+
+                    <button class="delete">
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Todo 2 -->
+            <div class="todo-item">
+
+                <span>Learn CSS</span>
+
+                <div>
+
+                    <button class="edit">
+                        Edit
+                    </button>
+
+                    <button class="delete">
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Todo 3 -->
+            <div class="todo-item">
+
+                <span>Learn JavaScript</span>
+
+                <div>
+
+                    <button class="edit">
+                        Edit
+                    </button>
+
+                    <button class="delete">
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
